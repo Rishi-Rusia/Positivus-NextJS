@@ -36,13 +36,14 @@ export default function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-xl text-black transition-all duration-200 hover:underline visited:text-black"
+                className="group relative text-xl text-black visited:text-black"
               >
                 {link.label}
+                <span className="absolute -bottom-1 left-0 h-[2px] w-full origin-left scale-x-0 bg-black transition-transform duration-300 ease-out group-hover:scale-x-100" />
               </Link>
             ))}
 
-            <button className="rounded-2xl border border-black px-8 py-4 text-xl transition-all duration-200 hover:bg-black hover:text-white">
+            <button className="cursor-pointer rounded-2xl border border-black px-8 py-4 text-xl transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-lg">
               Request a quote
             </button>
           </div>
@@ -104,14 +105,15 @@ export default function Navbar() {
                       key={link.label}
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="text-2xl font-medium text-[#191A23] transition-all duration-200 hover:underline visited:text-[#191A23]"
+                      className="group relative w-fit text-2xl font-medium text-[#191A23] visited:text-[#191A23]"
                     >
                       {link.label}
+                      <span className="absolute -bottom-1 left-0 h-[2px] w-full origin-left scale-x-0 bg-[#191A23] transition-transform duration-300 ease-out group-hover:scale-x-100" />
                     </Link>
                   ))}
                 </div>
 
-                <button className="rounded-xl bg-[#191A23] px-6 py-4 text-lg text-white transition-all duration-200 hover:opacity-90">
+                <button className="cursor-pointer rounded-xl bg-[#191A23] px-6 py-4 text-lg text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                   Request a quote
                 </button>
               </div>
