@@ -5,6 +5,7 @@ import CTASection from "../components/Banners/CTASection";
 import CaseStudySection from "../components/Sections/CaseStudySection";
 import WorkingProcessSection from "../components/Sections/WorkingProgressSection";
 import TeamSection from "../components/Sections/TeamSection";
+import TestimonialSection from "../components/Sections/TestimonialSection";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <CaseStudySection />
       <WorkingProcessSection />
       <TeamSection />
+      <TestimonialSection />
     </>
   );
 }
