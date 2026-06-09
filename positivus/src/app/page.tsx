@@ -4,6 +4,7 @@ import ServiceSection from "../components/Sections/ServiceSection";
 import CTASection from "../components/Banners/CTASection";
 import CaseStudySection from "../components/Sections/CaseStudySection";
 import WorkingProcessSection from "../components/Sections/WorkingProgressSection";
+import TeamSection from "../components/Sections/TeamSection";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       />
       <CaseStudySection />
       <WorkingProcessSection />
+      <TeamSection />
     </>
   );
 }

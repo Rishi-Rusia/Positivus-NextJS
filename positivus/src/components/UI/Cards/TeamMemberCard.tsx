@@ -28,11 +28,17 @@ export default function TeamMemberCard({
     >
       <div className="flex items-start justify-between">
         <div className="flex items-end gap-4">
-          <img
-            src={image}
-            alt={name}
-            className="h-24 w-24 object-contain"
-          />
+          <div className="relative h-24 w-24">
+  <div className="absolute left-1/2 top-1/2 h-16 w-10 -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-full bg-[#B9FF66]" />
+
+  <div className="absolute left-1/2 top-1/2 h-16 w-10 -translate-x-1/2 -translate-y-1/2 -rotate-45 rounded-full bg-[#B9FF66]" />
+
+  <img
+    src={image}
+    alt={name}
+    className="absolute left-1/2 top-1/2 h-20 w-20 -translate-x-1/2 -translate-y-1/2 rounded-full object-cover"
+  />
+</div>
 
           <div>
             <h3 className="text-xl font-medium text-[#191A23]">
