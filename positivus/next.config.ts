@@ -7,6 +7,11 @@ const nextConfig: NextConfig = {
       protocol: "https",
       hostname: "positivustheme.vercel.app",
     },
+    {
+      protocol: "https",
+      hostname: "framerusercontent.com",
+    },
+
   ],
 },
 };

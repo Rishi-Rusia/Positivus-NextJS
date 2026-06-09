@@ -34,6 +34,7 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/layout/Navbar";
 import SmoothScroll from "../components/utility/SmoothScroll";
+import Footer from "../components/layout/Footer";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -56,6 +57,7 @@ export default function RootLayout({
         <SmoothScroll />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
