@@ -13,7 +13,7 @@ const brands = [
 
 export default function Brands() {
   return (
-    <section className="relative mx-12 my-5 overflow-hidden">
+    <section className="relative mx-12 my-10 overflow-hidden">
       <div className="relative">
         <motion.div
           className="flex w-max items-center gap-20"
