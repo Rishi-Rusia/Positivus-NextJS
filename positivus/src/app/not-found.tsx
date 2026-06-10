@@ -39,7 +39,7 @@ export default function NotFound() {
           href="/"
           className="mt-10 inline-flex cursor-pointer items-center justify-center rounded-[18px] bg-[#191A23] px-10 py-5 text-lg font-medium text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
         >
-          Go Back Home
+          Go Home
         </Link>
       </motion.div>
     </main>
