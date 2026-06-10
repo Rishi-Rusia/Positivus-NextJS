@@ -7,11 +7,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
 const navLinks = [
-  { label: "About us", href: "#" },
-  { label: "Services", href: "#" },
-  { label: "Use Cases", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "Blog", href: "#" },
+  { label: "About us", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Use Cases", href: "/use-cases" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Blog", href: "/blog" },
 ];
 
 export default function Navbar() {

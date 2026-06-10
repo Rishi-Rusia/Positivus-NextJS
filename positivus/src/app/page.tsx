@@ -6,10 +6,12 @@ import CaseStudySection from "../components/Sections/CaseStudySection";
 import WorkingProcessSection from "../components/Sections/WorkingProgressSection";
 import TeamSection from "../components/Sections/TeamSection";
 import TestimonialSection from "../components/Sections/TestimonialSection";
+import ContactSection from "../components/Sections/ContactSection";
 
 export default function Home() {
   return (
     <>
+    <div className="m-8">
       <HomePageHero />
       <Brands />
       <ServiceSection />
@@ -23,6 +25,9 @@ export default function Home() {
       <WorkingProcessSection />
       <TeamSection />
       <TestimonialSection />
+      <ContactSection />
+    </div>
+      
     </>
   );
 }
