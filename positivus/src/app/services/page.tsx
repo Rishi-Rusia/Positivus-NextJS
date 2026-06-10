@@ -5,7 +5,6 @@ import RevenueGrowthChart from "../../components/UI/Charts/RevenueGrowthChart";
 import LeadsChart from "../../components/UI/Charts/LeadsChart";
 
 import ServiceSection from "../../components/Sections/ServiceSection";
-import WorkingProcessSection from "../../components/Sections/WorkingProgressSection";
 import CaseStudySection from "../../components/Sections/CaseStudySection";
 import TestimonialSection from "../../components/Sections/TestimonialSection";
 import ContactSection from "../../components/Sections/ContactSection";
@@ -13,6 +12,7 @@ import ContactSection from "../../components/Sections/ContactSection";
 import CTASection from "../../components/Banners/CTASection";
 
 import SectionHeader from "../../components/layout/SectionHeader";
+import ServiceAccordion from "@/src/components/Sections/ServiceAccordion";
 
 export default function ServicesPage() {
   return (
@@ -54,7 +54,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Process */}
-      <WorkingProcessSection />
+      <ServiceAccordion />
 
       {/* Case Studies */}
       <CaseStudySection />
