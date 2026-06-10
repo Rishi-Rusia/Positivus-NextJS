@@ -1,4 +1,4 @@
-import PageHero from "../..//components/Banners/PageHero.tsx";
+import PageHero from "../../components/Banners/PageHero";
 import Marquee from "../../components/UI/Marquee";
 
 import MetricCard from "../../components/UI/MetricCard";

@@ -1,10 +1,16 @@
-import CTASection from "../../components/Banners/CTASection";
+import PageHero from "../../components/Banners/PageHero";
 import Marquee from "../../components/UI/Marquee";
 import Timeline from "../../components/UI/TimeLine";
 import StatsCounter from "../../components/UI/StatsCounter";
 
+import RevenueGrowthChart from "../../components/UI/Charts/RevenueGrowthChart";
+import TrafficSourcePieChart from "../../components/UI/Charts/TrafficSourcePieChart";
+
 import TeamSection from "../../components/Sections/TeamSection";
 import ContactSection from "../../components/Sections/ContactSection";
+
+import CTASection from "../../components/Banners/CTASection";
+
 import SectionHeader from "../../components/layout/SectionHeader";
 
 const timelineItems = [
@@ -36,41 +42,14 @@ const timelineItems = [
 
 export default function AboutPage() {
   return (
-    <main className="overflow-hidden">
-      {/* HERO */}
-      <section className="relative mx-auto max-w-7xl px-6 py-6 lg:px-8 lg:py-8">
-        <div className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 select-none text-[220px] font-bold text-[#191A23]/5 lg:block">
-          ABOUT
-        </div>
+    <main>
+      <PageHero
+        badge="About Us"
+        title="Empowering Businesses Through Digital Growth"
+        description="We're a team of strategists, marketers, designers, and problem solvers helping ambitious businesses increase visibility, generate qualified leads, and achieve sustainable growth."
+        backgroundText="ABOUT"
+      />
 
-        <div className="relative grid items-center gap-16 lg:grid-cols-2">
-          <div>
-            <div className="mb-6 inline-block rounded-xl bg-[#B9FF66] px-4 py-2 text-lg font-medium text-[#191A23]">
-              About Us
-            </div>
-
-            <h1 className="text-5xl font-medium leading-tight text-[#191A23] md:text-6xl lg:text-[72px]">
-              Empowering Businesses Through Digital Growth
-            </h1>
-
-            <p className="mt-8 max-w-xl text-lg leading-relaxed text-[#191A23] md:text-xl">
-              We're a team of strategists, marketers, designers, and problem
-              solvers helping ambitious businesses increase visibility, generate
-              qualified leads, and achieve sustainable growth.
-            </p>
-          </div>
-
-          <div className="flex justify-center">
-            <img
-              src="https://positivustheme.vercel.app/_image?href=%2F_astro%2Fhero.Cc0GD7y9.svg&w=601&h=515&f=svg"
-              alt="About Positivus"
-              className="w-full max-w-[600px]"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* MARQUEE */}
       <Marquee
         items={[
           "SEO",
@@ -84,7 +63,7 @@ export default function AboutPage() {
         ]}
       />
 
-      {/* STORY */}
+      {/* Our Story */}
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <SectionHeader
           title="Our Story"
@@ -114,7 +93,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* TIMELINE */}
+      {/* Timeline */}
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <SectionHeader
           title="Our Journey"
@@ -126,7 +105,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* STATS */}
+      {/* Stats */}
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <SectionHeader
           title="By The Numbers"
@@ -160,7 +139,20 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* TEAM */}
+      {/* Performance Insights */}
+      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+        <SectionHeader
+          title="Performance Insights"
+          description="A glimpse into the kind of growth and performance improvements our clients typically experience."
+        />
+
+        <div className="mt-12 grid gap-8 lg:grid-cols-2">
+          <RevenueGrowthChart />
+          <TrafficSourcePieChart />
+        </div>
+      </section>
+
+      {/* Team */}
       <TeamSection />
 
       {/* CTA */}
@@ -171,7 +163,7 @@ export default function AboutPage() {
         image="https://positivustheme.vercel.app/_image?href=%2F_astro%2Fproposal-pic.DC7YnBHg.png&w=494&h=395&f=webp"
       />
 
-      {/* CONTACT */}
+      {/* Contact */}
       <ContactSection />
     </main>
   );
