@@ -56,8 +56,10 @@ export default function ServicesPage() {
       {/* Process */}
       <ServiceAccordion />
 
-      {/* Case Studies */}
+      {/* Case Studies */} 
       <CaseStudySection />
+
+      {/* Rishi */} 
 
       {/* CTA */}
       <CTASection
