@@ -27,7 +27,6 @@
 //     />
 // </head>
 // <body className={geist.className}><Navbar />{children}</body> </html>);
- {/* Rishi */} 
 // }
 
 import type { Metadata } from "next";
